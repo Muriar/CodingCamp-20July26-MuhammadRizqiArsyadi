@@ -53,3 +53,8 @@ NFR-3: Visual Design
 User-friendly aesthetic
 Clear visual hierarchy
 Readable typography
+
+##  Folder Rules
+Only 1 CSS file inside css/
+Only 1 JavaScript file inside js/
+Keep code clean and readable
