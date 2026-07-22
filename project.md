@@ -1,3 +1,4 @@
+
 ## ⚠️ Required Features (MVP)
 Your project must include:
 Input Form
@@ -20,7 +21,7 @@ You can use Chart.js or another simple chart library
 ## Technical Constraints
 TC-1: Technology Stack
 HTML for structure
-CSS for styling
+CSS for stylinggit p
 Vanilla JavaScript (no frameworks like React, Vue, etc.)
 No backend server required
 
