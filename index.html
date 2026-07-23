@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js via jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header class="balance-container">
+            <h2>Total Pengeluaran</h2>
+            <div id="total-balance" class="balance-amount">Rp 0</div>
+        </header>
+
+        <div class="main-content">
+            <!-- Form Input -->
+            <section class="card">
+                <h3>Tambah Transaksi Baru</h3>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="item-name">Nama Item</label>
+                        <input type="text" id="item-name" placeholder="Contoh: Nasi Goreng" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="amount">Jumlah (Rp)</label>
+                        <input type="number" id="amount" placeholder="Contoh: 25000" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Kategori</label>
+                        <select id="category" required>
+                            <option value="" disabled selected>Pilih Kategori</option>
+                            <option value="Makanan">Makanan</option>
+                            <option value="Belanja">Belanja</option>
+                            <option value="Transportasi">Transportasi</option>
+                            <option value="Fun">Fun</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Tambah Transaksi</button>
+                </form>
+            </section>
+
+            <!-- Visual Chart -->
+            <section class="card chart-card">
+                <h3>Distribusi Pengeluaran</h3>
+                <div class="chart-container">
+                    <canvas id="expense-chart"></canvas>
+                </div>
+            </section>
+        </div>
+
+        <!-- List Transaksi -->
+        <section class="card list-card">
+            <h3>Riwayat Transaksi</h3>
+            <div class="scrollable-list">
+                <ul id="transaction-list">
+                    <!-- Daftar Transaksi dari js -->
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

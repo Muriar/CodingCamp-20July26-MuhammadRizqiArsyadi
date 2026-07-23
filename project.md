@@ -59,3 +59,6 @@ Readable typography
 Only 1 CSS file inside css/
 Only 1 JavaScript file inside js/
 Keep code clean and readable
+
+## Usage AI Agent
+saya menggunakan beberapa AI Agent untuk melakukan scanning pada seluruh kode saya untuk mendeteksi kemungkinan error yang mungkin akan muncul ketika deployment
